@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ตัวแปลงอุณหภูมิ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css"> 
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1>ตัวแปลงอุณหภูมิ</h1>
+            <span class="Temperature-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+        </div>
+
+        <div class="celsius">
+            <label for="celsius"></label>
+            <input type="number" id="Celsius" placeholder="Celsius" oninput="CelToAll()">
+            <span class="icon">&#8451</span>
+
+        </div>
+
+        <div class="fahrenheit">
+            <label for="fahrenheit"></label>
+            <input type="number" id="Fahrenheit" placeholder="Fahrenheit" oninput="FarToAll()">
+            <span class="icon">&#8457</span>
+
+        </div>
+
+        <div class="kelvin">
+            <label for="kelvin"></label>
+            <input type="number" id="Kelvin" placeholder="Kelvin" oninput="KenToAll()">
+            <span class="icon">&#8490</span> 
+
+        </div>
+
+        <div class="delisle">
+            <label for="delisle"></label>
+            <input type="number" id="Delisle" placeholder="Delisle" oninput="DelToAll()">
+            <span class="icon">D</span>  
+
+        </div>
+
+        <div class="button">
+            <button id="clearButton">All Clear</button>
+        </div>
+
+        <script src='index.js'></script>
+    </div>
+
+</body>
+</html>
